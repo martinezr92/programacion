@@ -21,6 +21,7 @@ for(i=1; i<=n ; i=i+2)
 {
 	s=s+flag*(pow(x,i)/fact);
 	fact=fact*(i+1)*(i+2);
+	flag=flag*-1;
 }
 cout<<"la suma es: "<< s;
 getch();
