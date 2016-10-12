@@ -1,0 +1,27 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main()
+{
+ float s,x;
+ int i,n,fact,flag;
+ s=0; // Acumulador de suma
+flag=-1; // Inicia la serie en negativo
+fact=1; //Acumulador de producto
+cout<<"Ingrese el ultimo elmento de la serie: ";
+cin>> n;
+cout<< "Ingrese el valor de x: ";
+cin>> x;
+
+for(i=1; i<=n ; i=i+2)
+{
+	s=s+flag*(pow(x,i)/fact);
+	fact=fact*(i+2)*(i+2);
+}
+cout<<"la suma es: "<< s;
+getch();
+}
