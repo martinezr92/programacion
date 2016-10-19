@@ -1,0 +1,63 @@
+// Notas.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	int faltas,registro,cont=0;
+	float p1,p2,pr,f,nf,prom=0;
+	
+	cout<<"ingrese número de registro: ";
+	cin>> registro;
+
+	while (registro != -999)
+	{
+	 do
+	 {
+		cout<< "Ingresar parcial 1: ";
+	    cin>> p1;
+	 }
+	 while ((p1<0) || (p1>100))
+	
+		 do
+		 {
+	 cout<< "Ingresar parcial 2: ";
+	 cin>>p2;
+
+	 while ((p1<0) || (p>100))
+	 cout<< "Ingresar nota practica: " ;
+	 cin>>pr;
+	 cout<<"Ingresar final: ";
+	 cin>> f;
+	
+	 cout<<" Ingrese faltas: ";
+	 cin>> faltas;
+
+	if (faltas>10)
+		nf=0;
+	else
+	nf=(((p1+p2)/2)*0.4)+(pr*0,2)+(f*0,4);
+	cout<< "registro" <<" "<<nf<<" ";
+	
+	if(nf>=51)
+		cout<<" Aprobado ";
+	else
+		cout<<" Reprobado";
+	
+	cout<<"Ingresar registro";
+	cin>> registro;
+    
+	prom=prom+nf;
+	cont ++;
+	}
+	cout<<"El promedio es: "<< prom/cont;
+	getch();
+}
+
+
+falta validar un par mas de variables!!!!!!!!!!!!!!!!
