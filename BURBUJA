@@ -44,7 +44,7 @@ void mostrarvector (float a[], int tam)
 void burbuja (float a[], int tam)
 {
 	float aux;
-	for(int i=0;i<tam;i++)
+	for(int i=0;i<tam-1;i++)
 	for(int j=i+1;j<tam;j++)
 		if(a[i]>a[j])
 		{ aux=a[i];
